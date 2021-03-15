@@ -1,6 +1,4 @@
 import { IsDateString, IsString, MaxLength, MinLength } from 'class-validator';
-const minDate = new Date()
-minDate.setFullYear(1900, 0, 1)
 
 export class CreateUserDto {
   @IsString()
