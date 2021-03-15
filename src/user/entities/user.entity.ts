@@ -1,6 +1,6 @@
 import { Column, CreateDateColumn, PrimaryGeneratedColumn } from 'typeorm';
 
-export class User {
+export class UserEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -18,8 +18,4 @@ export class User {
 
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;
-
-  // @ManyToMany(() => ItemEntity)
-  // @JoinTable()
-  // item: ItemEntity[];
 }
